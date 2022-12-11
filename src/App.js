@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
-// import Home From './pages/Home';
-import { BrowserRouter } from 'react-router-dom';
-
+import Home from './pages/Home/Home';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Nevigation from './componants/shared/Nevigation/Nevigation';
 export default function App() {
   return (
     <BrowserRouter>
+      <Nevigation />
       <Switch>
         <Route path="/" exect>
           <Home />
